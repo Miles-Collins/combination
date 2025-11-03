@@ -3,6 +3,7 @@
     "*.dbclient-js": "javascript",
     "*.ejs": "html",
     ".fantomasignore": "ignore",
-    "cstdint": "cpp"
+    "cstdint": "cpp",
+    "iostream": "cpp"
   }
 }
