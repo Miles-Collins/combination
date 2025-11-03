@@ -16,11 +16,17 @@ uint16_t factorial(const uint16_t x) {
  * *** STUDENTS SHOULD WRITE CODE FOR THIS FUNCTION ***
  */
 int main() {
-    int n;
+    int n, k;
 
-    // get and validate user input
     cout << "Enter n: ";
     cin >> n;
+    cout << "Enter k: ";
+    cin >> k;
+
+    if (n <= 0 || k <= 0 || (n - k) < 0) {
+        cout << "result = -1" << endl;
+        return 0;
+    }
 
     // calculate C(n,k) = n! / (k! * (n-k)!)
     uint16_t c_n_k = factorial(n);
